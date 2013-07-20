@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="causio">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />  
+
+	<title>causio</title>
+
+	<!-- Styles -->
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/style/bootstrap-ns.css" />
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body ng-controller="TopCtrl">
+	<div class="container-fluid" >
+		<div class="header">
+			<a class="home-logo pull-left" href="#/"> </a>
+			<div class="pull-right">
+				<ul class="nav main-nav inline">
+					<!-- Top-level Navigation -->
+					<li><a href="#/page-1">Page 1</a></li>
+					<li><a href="#/page-2">Page 2</a></li>
+					<li><a href="#/page-3">Page 3</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- View Container -->
+		<div class="content" ng-view> </div>
+
+		<div class="footer">
+			<ul class="inline">
+				<!-- Footer Links -->
+				<li><small class="pull-left">Copyright <%= (new Date()).getFullYear() %> NinjaStack, Inc.</small></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- External Scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript" ></script>
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js" type="text/javascript" ></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js" type="text/javascript" ></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js" type="text/javascript" ></script>
+	<script type="text/javascript" src="/script/angular-resource.js"></script>
+
+	<!-- NS Scripts -->
+	<script type="text/javascript" src="/script/ns-services.js"></script>
+	<script type="text/javascript" src="/script/ns-filters.js"></script>
+	<script type="text/javascript" src="/script/ns-directives.js"></script>
+	<script type="text/javascript" src="/script/ns-app.js"></script>
+</body>
+</html>

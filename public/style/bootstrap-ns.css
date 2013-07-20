@@ -1,0 +1,151 @@
+/*	::::::::ns builder v1.4::::::::::::::: 
+	author ninjamike, ninjastack 
+	::::::::::::::2013:::::::::::::
+*/
+html { font-family: Arial, serif; }
+body { width:100%; }
+p { font-size:15px; font-family: 'Brandon', serif; }
+h1, h2, h3, h4, h5 { font-family: 'Brandon', Helvetica, serif; }
+h1 { padding:0; margin:0; }
+a { color:blue;  text-decoration:none; font-family: 'Brandon', serif;
+transition: opacity .45s ease-in-out;
+-moz-transition: opacity .45s ease-in-out;
+-webkit-transition: opacity .45s ease-in-out; }
+a:hover { color:#940011;  text-decoration:none; opacity:0.8; }
+
+ul { list-style-type:none; margin:0; padding:0; font-family: 'Brandon', serif; }
+
+html::selection {
+  background: #940011; /* Safari */
+  }
+html::-moz-selection {
+  background: #940011; /* Firefox */
+}
+p::selection, h1::selection, h2::selection, h3::selection {
+    background: #940011;
+}
+a,
+article h1,
+article h2,
+article {
+     -moz-transition: all .5s linear;
+     -webkit-transition: all .5s linear;
+     transition: all .5s linear;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+ }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+ }
+
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+  
+
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+ }
+
+/***********NINJA***************/
+
+.ninja { display:none !important; }
+.stealth { position:absolute; left:-99999px; }
+.shadows { opacity: .0001; }
+.shadows a:hover { cursor: default; }
+form { margin:0 !important; }
+.row { margin-left:0 !important; }
+.clear { float:left; clear:both; }
+.clear-right { float:right; clear:both; }
+
+.be-inline { display:inline-block; }
+.first-span { margin-left:0px !important; }
+.centered { margin: 0 auto; text-align:center; }
+.top { margin-top:150px; }
+.half-top { margin-top:75px; }
+.quarter-top { margin-top:25px !important; }
+.some-top-text { line-height:15px !important;}
+
+.ninja-fade-in {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}​
+.ninja-fade-out {
+    animation: fadeout 3s;
+    -moz-animation: fadeout 3s; /* Firefox */
+    -webkit-animation: fadeout 3s; /* Safari and Chrome */
+    -o-animation: fadeout 3s; /* Opera */
+}
+@keyframes fadeout {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadeout { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadeout { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}​
